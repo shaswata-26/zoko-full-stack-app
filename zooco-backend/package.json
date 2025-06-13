@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "cd ../zoko && npm install && npm run build && cp -r dist ../zooco-backend/client-build"
   },
   "keywords": [],
   "author": "",

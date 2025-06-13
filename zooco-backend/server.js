@@ -29,7 +29,9 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "client-build")));
 
-app.get("*", (req, res) => {
+
+
+app.get("/*splat", (req, res) => {
   res.sendFile(path.join(__dirname, "client-build", "index.html"));
 });
 
